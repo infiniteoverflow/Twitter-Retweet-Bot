@@ -38,8 +38,8 @@ class FavRetweetListener(tweepy.StreamListener):
         logger.error(status)
 
 def main(keywords):
-    auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
-    auth.set_access_token(access_token,access_secret)
+    auth = tweepy.OAuthHandler("Your Consumer Key","Your consumer_secret")
+    auth.set_access_token("Your Access_token","Your Access_secret")
 
 # Create API object
     api = tweepy.API(auth)
